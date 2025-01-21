@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skillset</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Himanshu Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <h1 style="font-weight: 800; font-size: 50px;">Profile</h1>
+        </center><br>
+        <div class="resume-section">
+            <button id="download-btn">Resume</button>
+            <progress id="progress-bar" value="0" max="100" style="display: none;"></progress>
+        </div>
+
+<!-- profile -->
+
+<div class="container">
+    <section class="skills-section">
+        <h2><i class="fa-sharp fa-regular fa-laptop-code"></i>Skills</h2>
+        <div class="skill">
+            <span>Html</span>
+            <div class="progress-bar" data-value="70"></div>
+        </div>
+        <div class="skill">
+            <span>Css</span>
+            <div class="progress-bar" data-value="60"></div>
+        </div>
+        <div class="skill">
+            <span>Javascript</span>
+            <div class="progress-bar" data-value="50"></div>
+        </div>
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress-bar" data-value="70"></div>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="skills-section">
+        <h2>FrameWork</h2>
+        <div class="skill">
+            <span>Jquery</span>
+            <div class="progress-bar" data-value="50"></div>
+        </div>
+        <div class="skill">
+            <span>React</span>
+            <div class="progress-bar" data-value="30"></div>
+        </div>
+        <div class="skill">
+            <span>Bootstrap</span>
+            <div class="progress-bar" data-value="60"></div>
+        </div>
+        <div class="skill">
+            <span>Django</span>
+            <div class="progress-bar" data-value="50"></div>
+        </div>
+        <div class="skill">
+            <span>TailwindsCss</span>
+            <div class="progress-bar" data-value="40"></div>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section class="skills-section">
+        <h2>Database Tool</h2>
+        <div class="skill">
+            <span>Mysql</span>
+            <div class="progress-bar" data-value="50"></div>
+        </div>
+        </section></div>
+        <div class="education-container">
+            <h2><i class="fa-sharp fa-solid fa-user-graduate"></i>Education</h2>
+            <div class="education-card">
+                <h1><i class="fa-solid fa-school"></i>Swami Nitanand Ser. Sec. School</h1>
+                <p><i class="fa-sharp fa-solid fa-graduation-cap"></i>10th Class</p>
+                <div class="date"><i class="fa-sharp-duotone fa-regular fa-calendar-days"></i>2018</div>
+                <p>CBSE</p>
+            </div>
+            <div class="education-card">
+                <h1><i class="fa-solid fa-school"></i>Swami Nitanand Ser. Sec. School</h1>
+                <p><i class="fa-sharp fa-solid fa-graduation-cap"></i>12th Class</p>
+                <div class="date"><i class="fa-sharp-duotone fa-regular fa-calendar-days"></i>2020</div>
+                <p>CBSE</p>
+            </div>
+            <div class="education-card">
+                <h1><i class="fa-sharp fa-solid fa-building-columns"></i>MDU Universty</h1>
+                <p><i class="fa-sharp fa-solid fa-graduation-cap"></i>BCA</p>
+                <div class="date"><i class="fa-sharp-duotone fa-regular fa-calendar-days"></i>2018</div>
+                <p>Bachelor Degree</p>
+            </div>
+    </div>
+</main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <h3>@2025 by Himanshu</h3>
+            </div>
+            <div class="col">
+                <h2>Call</h2>
+                <p><i class="fa-solid fa-phone-volume"></i> 91+9518863537</p>
+            </div>
+            <div class="email">
+
+                <h2>Write</h2>
+                <a href="www.email.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+
+            <div class="follow-link">
+                <h2>Follow</h2>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-dribbble"></i> Dribbble</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.progress-bar').forEach(bar=>{
+            const value= bar.getAttribute('data-value');
+            bar.style.setProperty('--progress-with',`${value}%`);
+            bar.style.background= `linear-gradient(to right, #00a88d ${value}%, #e0e0e0 ${value}%)`;
+        });
+
+    </script>
+</body>
+
+</html>
